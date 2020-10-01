@@ -47,11 +47,20 @@ export const getPolyglotStudents = languageCount => {
 // Export a function called getAvailableInstructors
 // It should not accept any parameters
 // It should return an array of instructors that don't have any students
+export const getAvailableInstructors = () => {
+    const arrStudents = useStudents()
+    return instructors.filter(function(instructor){
+        const isTeaching = arrStudents.find(student => 
+            student.instructorId === instructor.id) 
+            if (!isTeaching) return instructor
+    })
+}
 
 // Export a function called getStudentsByLanguage
 // It should accept one string parameter named `language`
 // It should return an array of students who know the given language
 // HINT: In addition to the `filter` method, you might also look up the `some` method
+
 
 /******** ADVANCED CHALLENGE ********/
 /******** Only do this if all other tests are passing ****/
