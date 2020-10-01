@@ -13,6 +13,7 @@ export const getStudentById = (id) => students.find(student => student.id === id
 // It should accept one integer parameter named `id`
 // It should return the instructor object with the matching ID
 // Ex: getInstructorById(1)
+export const getInstructorById = (id) => instructors.find(instructor => instructor.id === id)
 
 // Export a function called getStudentByLastName
 // It should accept one string parameter named `lastName`
