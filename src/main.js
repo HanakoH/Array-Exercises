@@ -1,5 +1,6 @@
-import { getAvailableInstructors, getStudentsByLanguages } from "./filterExercises.js";
+import { getAvailableInstructors, getStudentsByLanguage } from "./filterExercises.js";
+import { getStudentByName } from "./findExercises.js";
 
 getAvailableInstructors()
-getStudentsByLanguages()
-getStudentNames()
+getStudentsByLanguage()
+getStudentByName()
