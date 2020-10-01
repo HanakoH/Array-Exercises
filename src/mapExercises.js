@@ -20,3 +20,13 @@ export const getStudentNames = () => {
     <h2>Cohort 43</h2>
   </div>
 */
+export const StudentList = () => {
+  return students.map(student => { 
+    return `
+      <div>
+        <h1>${student.firstName + "" + student.lastName}</h1>
+        <h2>${student.cohort}</h2>
+      </div>
+    `
+  })
+}
